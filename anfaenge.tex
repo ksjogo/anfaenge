@@ -16,8 +16,8 @@
 \renewcommand{\sectionmark}[1]{\markright{#1}}
 
 \makepagestyle{mystyle}
-\makeevenhead{mystyle}{\thepage}{}{\MakeUppercase\rightmark}
-\makeoddhead{mystyle}{\MakeUppercase\rightmark}{}{\thepage}
+\makeevenhead{mystyle}{\thepage\ \MakeUppercase\rightmark}{}{}
+\makeoddhead{mystyle}{}{}{\MakeUppercase\rightmark\ \thepage}
 
 \newcommand\anfang[2]{
 \newpage
@@ -31,11 +31,18 @@
 \begin{document}
 
 \chapter{100 Buchanf\"ange}
+\thispagestyle{empty}
+Eine sinnunige Zusammenstellung von\\\\
+Simon Clemens Goslar\\
+Johannes Bernhard Goslar\\
+\\
+Wieso endige Notizplätze, wenn innendrin mehr Leerraum verkaufbar ist.
 
 \anfang{Irsebel}{Irsebel pfefferte nach}
+\setcounter{page}{0}
 
-\anfang{Irsebel}{Irsebel pfefferte nach}
+\anfang{Breaker}{4537. 4327. 8476.}
 
-\anfang{Irsebel}{Irsebel pfefferte nach}
+\anfang{Simon}{Trank. Zauber. Besaufen.}
 
 \end{document}
